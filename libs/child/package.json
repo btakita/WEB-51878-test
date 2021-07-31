@@ -1,0 +1,11 @@
+{
+	"name": "@WEB-51878-test/child",
+	"version": "1.0.0",
+	"type": "module",
+	"devDependencies": {
+		"@WEB-51878-test/parent": "workspace:^1.0.0",
+		"@ctx-core/object": "^21.0.13",
+		"import-meta-resolve": "^1.1.1",
+		"typescript": "^4.3.5"
+	}
+}

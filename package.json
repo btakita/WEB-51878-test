@@ -1,0 +1,9 @@
+{
+	"name": "WEB-51878-test",
+	"type": "module",
+	"module": "src/index.js",
+	"types": "src/index.ts",
+	"devDependencies": {
+		"typescript": "^4.3.5"
+	}
+}

@@ -1,0 +1,83 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers:
+      typescript: ^4.3.5
+    devDependencies:
+      typescript: 4.3.5
+
+  libs/child:
+    specifiers:
+      '@ctx-core/object': ^21.0.13
+      '@WEB-51878-test/parent': workspace:^1.0.0
+      import-meta-resolve: ^1.1.1
+      typescript: ^4.3.5
+    devDependencies:
+      '@ctx-core/object': 21.0.13
+      '@WEB-51878-test/parent': link:../parent
+      import-meta-resolve: 1.1.1
+      typescript: 4.3.5
+
+  libs/parent:
+    specifiers:
+      typescript: ^4.3.5
+    devDependencies:
+      typescript: 4.3.5
+
+packages:
+
+  /@ctx-core/function/20.0.13:
+    resolution: {integrity: sha512-HFEUrHnFa48v+cs1tUpxUnNaYb2tj/6nTPnDriqUMcPYRjnWgxkB4jcFEY+FHiMgDGoYWdpe0slZ7nzWaFdMXQ==}
+    dependencies:
+      esm: 3.2.25
+    dev: true
+
+  /@ctx-core/object/21.0.13:
+    resolution: {integrity: sha512-WyKzATpJqiG/FYaXoV/to4ulchiGXbbBLR2+2FIqMIc0Wgw1q9aNz+OSabv2RF/WK6NoHT+zkWJ3jhcMHlOgOQ==}
+    dependencies:
+      '@ctx-core/function': 20.0.13
+    dev: true
+
+  /builtins/4.0.0:
+    resolution: {integrity: sha512-qC0E2Dxgou1IHhvJSLwGDSTvokbRovU5zZFuDY6oY8Y2lF3nGt5Ad8YZK7GMtqzY84Wu7pXTPeHQeHcXSXsRhw==}
+    dependencies:
+      semver: 7.3.5
+    dev: true
+
+  /esm/3.2.25:
+    resolution: {integrity: sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==}
+    engines: {node: '>=6'}
+    dev: true
+
+  /import-meta-resolve/1.1.1:
+    resolution: {integrity: sha512-JiTuIvVyPaUg11eTrNDx5bgQ/yMKMZffc7YSjvQeSMXy58DO2SQ8BtAf3xteZvmzvjYh14wnqNjL8XVeDy2o9A==}
+    dependencies:
+      builtins: 4.0.0
+    dev: true
+
+  /lru-cache/6.0.0:
+    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
+    engines: {node: '>=10'}
+    dependencies:
+      yallist: 4.0.0
+    dev: true
+
+  /semver/7.3.5:
+    resolution: {integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+
+  /typescript/4.3.5:
+    resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /yallist/4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
